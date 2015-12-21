@@ -29,7 +29,7 @@ declare module angular {
     bindings?: Object;
     controller?: string|Function;
     controllerAs?: string;
-    isolate?: any;
+    isolate?: boolean;
     template?: string|Function;
     templateUrl?: string|Function;
     transclude?: boolean;
