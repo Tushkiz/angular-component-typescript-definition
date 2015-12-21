@@ -27,13 +27,15 @@ declare module angular {
   ///////////////////////////////////////////////////////////////////////////
   interface IComponent {
     bindings?: Object;
-    controller?: any;
+    controller?: string|Function;
     controllerAs?: string;
     isolate?: any;
-    template?: any;
-    templateUrl?: any;
-    transclude?: any;
+    template?: string|Function;
+    templateUrl?: string|Function;
+    transclude?: boolean;
     restrict?: string;
+    $canActivate?: Function;
+    $routeConfig?: Object
   }
 
 }
